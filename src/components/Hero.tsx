@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative pt-24 overflow-hidden">
+    <section className="relative pt-16 overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/hero.jpg"
@@ -11,8 +11,8 @@ export default function Hero() {
           priority
           className="object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       </div>
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--accent)]/20 rounded-full blur-3xl -z-10" />
