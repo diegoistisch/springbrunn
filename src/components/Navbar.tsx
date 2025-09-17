@@ -64,33 +64,46 @@ export default function Navbar() {
         <Link href="#enroll" className="btn btn-primary text-sm whitespace-nowrap">Jetzt starten</Link>
       </div>
 
-      {/* Mobile Navigation Box */}
-      {!isMenuOpen && (
-        <div className="pointer-events-auto absolute left-6 right-6 top-6 md:hidden">
-          <div className="border-2 border-white/30 text-white backdrop-blur-sm bg-white/5 rounded-full px-8 py-4 flex items-center justify-between">
-            {/* Logo */}
-            <Image
-              src="/brand/logo_small.svg"
-              alt="Springbrunn Fitness"
-              width={40}
-              height={40}
-              className="h-8 w-auto object-contain"
-            />
 
-            {/* Burger Menu */}
+      {/* Mobile Burger Button Portal */}
+      {mounted && createPortal(
+        <div
+          className="md:hidden"
+          style={{
+            position: 'fixed',
+            bottom: '24px',
+            right: '24px',
+            zIndex: 99999,
+            pointerEvents: 'auto'
+          }}
+        >
+          {!isMenuOpen && (
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="p-2"
               aria-label="Menu öffnen"
+              style={{
+                width: '56px',
+                height: '56px',
+                border: '2px solid rgba(255, 255, 255, 0.3)',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                cursor: 'pointer',
+                backdropFilter: 'blur(8px)'
+              }}
             >
-              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-                <span className="block h-0.5 w-6 bg-white" />
-                <span className="block h-0.5 w-6 bg-white" />
-                <span className="block h-0.5 w-6 bg-white" />
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '4px' }}>
+                <span style={{ display: 'block', height: '2px', width: '24px', backgroundColor: 'white' }} />
+                <span style={{ display: 'block', height: '2px', width: '24px', backgroundColor: 'white' }} />
+                <span style={{ display: 'block', height: '2px', width: '24px', backgroundColor: 'white' }} />
               </div>
             </button>
-          </div>
-        </div>
+          )}
+        </div>,
+        document.body
       )}
 
       {/* Mobile Menu Portal */}
@@ -116,7 +129,8 @@ export default function Navbar() {
           <div
             className="absolute inset-y-0 right-0 w-80 shadow-2xl transition-transform duration-300 ease-in-out"
             style={{
-              backgroundColor: '#000000',
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(20px)',
               borderLeft: '1px solid rgba(255, 255, 255, 0.2)',
               transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)'
             }}
