@@ -28,8 +28,8 @@ const plans: Plan[] = [
 ];
 
 export default function Pricing() {
-  const titleRef = useScrollAnimation();
-  const cardsRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const cardsRef = useScrollAnimation<HTMLDivElement>();
 
   return (
     <section id="plans" className="py-32 relative">

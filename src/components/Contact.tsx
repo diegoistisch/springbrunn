@@ -2,8 +2,8 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Contact() {
-  const titleRef = useScrollAnimation();
-  const formRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const formRef = useScrollAnimation<HTMLFormElement>();
 
   return (
     <section id="contact" className="py-32 relative">

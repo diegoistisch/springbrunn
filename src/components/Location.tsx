@@ -2,8 +2,8 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Location() {
-  const titleRef = useScrollAnimation();
-  const mapRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const mapRef = useScrollAnimation<HTMLDivElement>();
 
   return (
     <section id="location" className="py-32 relative">

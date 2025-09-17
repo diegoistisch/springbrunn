@@ -2,8 +2,8 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Hours() {
-  const titleRef = useScrollAnimation();
-  const contentRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const contentRef = useScrollAnimation<HTMLDivElement>();
   const rows = [
     { d: "Montag", t: "07:00 – 23:00" },
     { d: "Dienstag", t: "07:00 – 23:00" },

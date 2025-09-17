@@ -21,8 +21,8 @@ const items = [
 ];
 
 export default function FeaturePrograms() {
-  const titleRef = useScrollAnimation();
-  const cardsRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const cardsRef = useScrollAnimation<HTMLDivElement>();
 
   return (
     <section id="programs" className="py-32 relative">
