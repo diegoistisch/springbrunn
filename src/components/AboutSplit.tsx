@@ -3,10 +3,10 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function AboutSplit() {
-  const titleRef = useScrollAnimation();
-  const contentRef = useScrollAnimation();
-  const imagesRef = useScrollAnimation();
-  const thirdImageRef = useScrollAnimation();
+  const titleRef = useScrollAnimation<HTMLDivElement>();
+  const contentRef = useScrollAnimation<HTMLDivElement>();
+  const imagesRef = useScrollAnimation<HTMLDivElement>();
+  const thirdImageRef = useScrollAnimation<HTMLDivElement>();
   return (
     <section id="about" className="py-24 relative">
       <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-[var(--accent)]/10 to-transparent rounded-full blur-3xl" />
