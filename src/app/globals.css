@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --muted: #94a3b8;
+  --card: #111111;
+  --primary: #ff6b35;
+  --primary-600: #e55a2b;
+  --secondary: #ffd700;
+  --accent: #00d4aa;
+  --gradient-1: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  --gradient-2: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-3: linear-gradient(135deg, #00d4aa 0%, #00c4cc 100%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-600: var(--primary-600);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Grundtypografie */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile Viewport Fix für sticky Header */
+.mobile-header-fix {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Verhindere Viewport-jumping */
+:root {
+  --vh: 1vh;
+}
+
+/* Body ohne Scroll-Bug */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(ellipse 1200px 600px at 50% 0%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+              radial-gradient(ellipse 800px 400px at 80% 100%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
+              var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* Helfer */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-full font-semibold px-8 py-4 transition-all duration-300;
+}
+.btn-primary {
+  background: var(--gradient-1);
+  color: white;
+  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+  transform: translateY(0);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.4);
+}
+.btn-outline {
+  @apply border-2 border-white/30 text-white backdrop-blur-sm;
+  background: rgba(255, 255, 255, 0.05);
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  @apply rounded-3xl bg-[var(--card)] border border-white/10 shadow-2xl backdrop-blur-sm;
+  background: linear-gradient(145deg, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.4));
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-right.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
