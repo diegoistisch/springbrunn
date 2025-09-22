@@ -56,10 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Kontakt</h4>
             <div className="space-y-3 text-white/70 text-sm">
-              <p>Musterstraße 12<br />12345 Musterstadt</p>
+              <p>Hofgarten 1<br />3484 Grafenwörth</p>
               <p>
-                <Link href="tel:+4930123456" className="hover:text-[var(--primary)] transition-colors">
-                  +49 30 123456
+                <Link href="tel:+436767466277" className="hover:text-[var(--primary)] transition-colors">
+                  +43 6767466277
                 </Link>
               </p>
               <p>

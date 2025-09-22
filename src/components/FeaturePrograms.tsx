@@ -26,7 +26,7 @@ export default function FeaturePrograms() {
 
   return (
     <section id="programs" className="py-32 relative">
-      <div className="absolute top-40 left-10 w-72 h-72 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-72 h-72 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">
         <div ref={titleRef} className="text-center mb-16 fade-in-up">
@@ -41,7 +41,7 @@ export default function FeaturePrograms() {
           </h2>
 
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Kraft, Ausdauer oder Balance – wir haben das richtige Programm für dich.
+            Kraft, Ausdauer oder Balance - wir haben das richtige Programm für dich.
           </p>
         </div>
 

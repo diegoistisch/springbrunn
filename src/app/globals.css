@@ -5,13 +5,13 @@
   --foreground: #ffffff;
   --muted: #94a3b8;
   --card: #111111;
-  --primary: #ff6b35;
-  --primary-600: #e55a2b;
-  --secondary: #ffd700;
-  --accent: #00d4aa;
-  --gradient-1: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-  --gradient-2: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-3: linear-gradient(135deg, #00d4aa 0%, #00c4cc 100%);
+  --primary: #6ecfda;
+  --primary-600: #48a9d5;
+  --secondary: #48a9d5;
+  --accent: #6ecfda;
+  --gradient-1: linear-gradient(135deg, #6ecfda 0%, #48a9d5 100%);
+  --gradient-2: linear-gradient(135deg, #48a9d5 0%, #3d8fb8 100%);
+  --gradient-3: linear-gradient(135deg, #6ecfda 0%, #5bc0ca 100%);
 }
 
 @theme inline {
@@ -57,8 +57,8 @@ html, body {
 }
 
 body {
-  background: radial-gradient(ellipse 1200px 600px at 50% 0%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
-              radial-gradient(ellipse 800px 400px at 80% 100%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
+  background: radial-gradient(ellipse 1200px 600px at 50% 0%, rgba(110, 207, 218, 0.05) 0%, transparent 50%),
+              radial-gradient(ellipse 800px 400px at 80% 100%, rgba(72, 169, 213, 0.08) 0%, transparent 50%),
               var(--background);
   color: var(--foreground);
   padding-top: env(safe-area-inset-top, 0);
@@ -80,12 +80,12 @@ body {
 .btn-primary {
   background: var(--gradient-1);
   color: white;
-  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 32px rgba(110, 207, 218, 0.3);
   transform: translateY(0);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 12px 40px rgba(110, 207, 218, 0.4);
 }
 .btn-outline {
   @apply border-2 border-white/30 text-white backdrop-blur-sm;

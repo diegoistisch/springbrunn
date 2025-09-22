@@ -33,7 +33,7 @@ export default function Pricing() {
 
   return (
     <section id="plans" className="py-32 relative">
-      <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">
         <div ref={titleRef} className="text-center mb-16 fade-in-up">

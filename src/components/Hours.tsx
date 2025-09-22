@@ -5,18 +5,18 @@ export default function Hours() {
   const titleRef = useScrollAnimation<HTMLDivElement>();
   const contentRef = useScrollAnimation<HTMLDivElement>();
   const rows = [
-    { d: "Montag", t: "07:00 – 23:00" },
-    { d: "Dienstag", t: "07:00 – 23:00" },
-    { d: "Mittwoch", t: "07:00 – 23:00" },
-    { d: "Donnerstag", t: "07:00 – 23:00" },
-    { d: "Freitag", t: "07:00 – 23:00" },
-    { d: "Samstag", t: "07:00 – 23:00" },
-    { d: "Sonntag", t: "07:00 – 23:00" },
+    { d: "Montag", t: "05:00 – 23:00" },
+    { d: "Dienstag", t: "05:00 – 23:00" },
+    { d: "Mittwoch", t: "05:00 – 23:00" },
+    { d: "Donnerstag", t: "05:00 – 23:00" },
+    { d: "Freitag", t: "05:00 – 23:00" },
+    { d: "Samstag", t: "05:00 – 23:00" },
+    { d: "Sonntag", t: "05:00 – 23:00" },
   ];
 
   return (
     <section id="hours" className="py-32 relative">
-      <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-[var(--accent)]/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-gradient-to-br from-[var(--accent)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">
         <div className="max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ export default function Hours() {
               Öffnungszeiten
             </h2>
             <p className="text-xl text-white/70">
-              Täglich von 07:00 bis 23:00 Uhr für dich geöffnet
+              Täglich von 05:00 bis 23:00 Uhr für dich geöffnet
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function Hours() {
                 <h4 className="font-semibold text-white">Rund um die Uhr verfügbar</h4>
               </div>
               <p className="text-white/70 text-sm leading-relaxed">
-                16 Stunden täglich geöffnet – perfekt für Frühaufsteher und Nachtschwärmer
+                18 Stunden täglich geöffnet – perfekt für Frühaufsteher und Nachtschwärmer
               </p>
             </div>
           </div>
