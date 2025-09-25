@@ -37,7 +37,7 @@ export default function EquipmentTeam() {
                 <div className="relative mt-12 mb-8">
                   <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-[var(--primary)] to-[var(--accent)] rounded-full"></div>
                   <blockquote className="pl-8 py-4 text-2xl font-medium text-white italic">
-                    "Keine Spielereien, keine Kompromisse."
+                    &ldquo;Keine Spielereien, keine Kompromisse.&rdquo;
                   </blockquote>
                 </div>
               </div>
@@ -108,7 +108,7 @@ export default function EquipmentTeam() {
           {/* Manifest Statement */}
           <div className="max-w-4xl mx-auto">
             <blockquote className="text-3xl md:text-5xl font-serif italic text-white leading-tight">
-              „Echter Fortschritt braucht Zeit, Wille und Leidenschaft."
+              &bdquo;Echter Fortschritt braucht Zeit, Wille und Leidenschaft.&ldquo;
             </blockquote>
           </div>
 

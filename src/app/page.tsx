@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import FeaturePrograms from "@/components/FeaturePrograms";
 import AboutSplit from "@/components/AboutSplit";
 import EquipmentTeam from "@/components/EquipmentTeam";
 import Community from "@/components/Community";

@@ -41,7 +41,7 @@ export default function Community() {
                 <div className="relative mt-12 mb-8">
                   <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-[var(--secondary)] to-[var(--accent)] rounded-full"></div>
                   <blockquote className="pl-8 py-4 text-2xl font-medium text-white italic">
-                    "Alle trainieren unter einem Dach. Und alle verbindet dasselbe Ziel: <span className="text-[var(--secondary)]">besser werden.</span>"
+                    &ldquo;Alle trainieren unter einem Dach. Und alle verbindet dasselbe Ziel: <span className="text-[var(--secondary)]">besser werden.</span>&rdquo;
                   </blockquote>
                 </div>
               </div>
