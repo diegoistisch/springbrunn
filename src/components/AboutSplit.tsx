@@ -23,42 +23,76 @@ export default function AboutSplit() {
               <span className="bg-gradient-to-r from-[var(--accent)] to-[var(--secondary)] bg-clip-text text-transparent"> verändern</span>
               <br />- aber nachhaltig.
             </h2>
-          </div>
 
-          <div ref={contentRef} className="slide-in-right">
-            <h3 className="text-2xl font-semibold text-white mb-6">So einfach ist das: dein neues Gym.</h3>
-            <p className="text-lg text-white/70 leading-relaxed mb-8">
-              Wir machen Training simpel und nachhaltig - kein Saison-Ding, sondern Teil deines Alltags.
-            </p>
-
-            <div className="grid grid-cols-2 gap-6 pt-6">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center flex-shrink-0">
+            {/* Stats moved to left side */}
+            <div className="grid grid-cols-2 gap-6 pt-8">
+              <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <div className="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <div className="text-4xl font-bold text-[var(--primary)]">2012</div>
+                  <div className="text-3xl font-bold text-[var(--primary)]">2012</div>
                 </div>
-                <div className="text-white/60 text-sm text-center">Gegründet</div>
+                <div className="text-white/60 text-sm">Gegründet</div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-[var(--accent)]/20 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <div className="w-8 h-8 bg-[var(--accent)]/20 rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <div className="text-4xl font-bold text-[var(--accent)]">18h</div>
+                  <div className="text-3xl font-bold text-[var(--accent)]">18h</div>
                 </div>
-                <div className="text-white/60 text-sm text-center">Täglich geöffnet</div>
+                <div className="text-white/60 text-sm">Täglich geöffnet</div>
               </div>
             </div>
           </div>
+
+          <div ref={contentRef} className="slide-in-right max-w-3xl space-y-12">
+            {/* Eröffner - Claim */}
+            <div className="space-y-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+                Seit 2012 steht Springbrunn Fitness für Qualität, Beständigkeit und maximale Leistung.
+              </h3>
+            </div>
+
+            {/* Philosophie Section */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <h4 className="text-xl font-semibold text-white">Unsere Philosophie</h4>
+              </div>
+
+              <div className="pl-11 space-y-3">
+                <p className="text-white font-medium">Fortschritt durch Klarheit und Beständigkeit.</p>
+                <p className="text-white/80">Wir jagen keinen Trends hinterher.</p>
+                <p className="text-white/80 leading-relaxed">
+                  Bei uns gibt es keine leeren Werbefloskeln, keine schnellen Versprechen. Stattdessen gibt es eine klare Botschaft: <span className="text-white font-medium">Wenn du bereit bist, an dir zu arbeiten, geben wir dir alles, was du dafür brauchst.</span>
+                </p>
+              </div>
+
+              {/* Key Quote */}
+              <div className="relative my-8">
+                <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-[var(--primary)] to-[var(--accent)] rounded-full"></div>
+                <blockquote className="pl-6 py-4 text-xl font-medium text-white italic">
+                  Wir glauben daran, dass wahre Stärke nicht über Nacht entsteht, sondern durch <span className="text-[var(--primary)]">Disziplin, Geduld und konsequentes Training.</span>
+                </blockquote>
+              </div>
+            </div>
+
+
+
+          </div>
         </div>
 
-        <div ref={imagesRef} className="grid md:grid-cols-2 gap-8 mb-8 fade-in-up">
+        <div ref={imagesRef} className="grid md:grid-cols-2 gap-8 mb-16 fade-in-up">
           <div className="card overflow-hidden group hover:scale-105 transition-all duration-500">
             <div className="relative">
               <Image
@@ -94,7 +128,7 @@ export default function AboutSplit() {
           </div>
         </div>
 
-        <div ref={thirdImageRef} className="max-w-2xl mx-auto fade-in-up">
+        <div ref={thirdImageRef} className="max-w-2xl mx-auto mb-20 fade-in-up">
           <div className="card overflow-hidden group hover:scale-105 transition-all duration-500">
             <div className="relative">
               <Image
@@ -112,7 +146,9 @@ export default function AboutSplit() {
             </div>
           </div>
         </div>
+
       </div>
+
     </section>
   );
 }

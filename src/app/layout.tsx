@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Springbrunn Fitness – Dein Gym in der Stadt",
-  description: "Mehr als ein Gym – eine Community, die dich antreibt. Moderne Ausstattung, individuelle Trainingspläne und flexible Mitgliedschaften.",
+  title: "Springbrunn Fitness - Dein Gym in der Stadt",
+  description: "Mehr als ein Gym - eine Community, die dich antreibt. Moderne Ausstattung, individuelle Trainingspläne und flexible Mitgliedschaften.",
   icons: {
     icon: [
       { url: "/brand/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },

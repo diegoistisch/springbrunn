@@ -27,7 +27,7 @@ export default function Contact() {
                 </div>
                 <span className="text-sm font-medium text-[var(--primary)]">E-Mail:</span>
               </div>
-              <p className="ml-7">kontakt@springbrunn-fitness.de</p>
+              <p className="ml-7">kontakt@springbrunn-fitness.at</p>
             </div>
             <div>
               <div className="flex items-center gap-2 mb-2">

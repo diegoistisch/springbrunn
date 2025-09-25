@@ -1,7 +1,10 @@
 import Hero from "@/components/Hero";
 import FeaturePrograms from "@/components/FeaturePrograms";
 import AboutSplit from "@/components/AboutSplit";
+import EquipmentTeam from "@/components/EquipmentTeam";
+import Community from "@/components/Community";
 import Pricing from "@/components/Pricing";
+import FreeTrial from "@/components/FreeTrial";
 import Hours from "@/components/Hours";
 import Location from "@/components/Location";
 import Contact from "@/components/Contact";
@@ -12,8 +15,10 @@ export default function Home() {
     <main className="flex flex-col">
       <Hero />
       <AboutSplit />
-      <FeaturePrograms />
+      <EquipmentTeam />
+      <Community />
       <Pricing />
+      <FreeTrial />
       <Hours />
       <Location />
       <Contact />

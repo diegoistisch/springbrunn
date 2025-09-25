@@ -6,24 +6,26 @@ type Plan = {
   price: number;
   features: string[];
   highlight?: boolean;
+  badge?: string;
 };
 
 const plans: Plan[] = [
   {
     name: "Tageskarte",
     price: 15,
-    features: ["Zutritt Fitnessbereich", "Einführung inkl."],
+    features: ["Zutritt Fitnessbereich", "Einführung inkl.", "Perfekt zum Reinschnuppern"],
   },
   {
-    name: "Mitgliedschaft monatlich",
-    price: 50,
-    features: ["Alle Bereiche", "Gruppenkurse", "Kündbar monatlich"],
+    name: "Jahresvertrag",
+    price: 54.90,
+    features: ["Alle Bereiche", "Gruppenkurse", "12 Monate Laufzeit", "Beste Preis-Leistung"],
     highlight: true,
   },
   {
     name: "Monatskarte",
-    price: 65,
+    price: 85,
     features: ["Alle Bereiche", "Gruppenkurse", "1 Monat gültig"],
+    badge: "Keine Vertragsbindung",
   },
 ];
 
@@ -46,8 +48,9 @@ export default function Pricing() {
           </h2>
         </div>
 
-        <div ref={cardsRef} className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto fade-in-up">
-          {plans.map((p, index) => (
+        <div ref={cardsRef} className="fade-in-up">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
+            {plans.map((p, index) => (
             <div
               key={p.name}
               className={`card p-8 relative text-white flex flex-col transition-all duration-500 hover:scale-105 hover:-translate-y-2 group ${
@@ -68,6 +71,11 @@ export default function Pricing() {
                   BELIEBT
                 </div>
               )}
+              {p.badge && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-gradient-to-r from-[var(--accent)] to-[var(--secondary)] rounded-full text-xs font-semibold text-white">
+                  {p.badge}
+                </div>
+              )}
 
               <div className="flex items-baseline justify-between mb-6 relative z-10">
                 <div>
@@ -76,7 +84,7 @@ export default function Pricing() {
                 </div>
                 <div className="text-right">
                   <div className={`text-4xl font-bold ${p.highlight ? "text-[var(--primary)]" : "text-white"}`}>
-                    €{p.price}
+                    {p.price % 1 === 0 ? p.price : p.price.toFixed(2).replace('.', ',')} €
                   </div>
                   <div className="text-sm text-white/60">
                     {p.name === "Tageskarte" ? "/ Tag" : "/ Monat"}
@@ -105,10 +113,31 @@ export default function Pricing() {
                   p.highlight ? "btn-primary" : "btn-outline"
                 }`}
               >
-                Jetzt Mitglied werden
+                {p.name === "Tageskarte" ? "Tagesticket holen" : "Jetzt Mitglied werden"}
               </a>
             </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Ermäßigter Tarif Hinweis */}
+          <div className="max-w-3xl mx-auto">
+            <div className="card p-6 bg-gradient-to-r from-[var(--accent)]/10 to-[var(--secondary)]/10 border border-[var(--accent)]/20">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-10 h-10 bg-[var(--accent)]/20 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-white mb-1">Ermäßigter Tarif</h4>
+                  <p className="text-[var(--accent)] font-semibold">Nur 44,90 € / Monat (Jahresvertrag) | 65 € (Monatskarte)</p>
+                </div>
+              </div>
+              <p className="text-white/70 text-sm pl-14">
+                Für Schüler, Studenten, Zivildiener, Grundwehrdiener und Senioren
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -5,13 +5,13 @@ export default function Hours() {
   const titleRef = useScrollAnimation<HTMLDivElement>();
   const contentRef = useScrollAnimation<HTMLDivElement>();
   const rows = [
-    { d: "Montag", t: "05:00 – 23:00" },
-    { d: "Dienstag", t: "05:00 – 23:00" },
-    { d: "Mittwoch", t: "05:00 – 23:00" },
-    { d: "Donnerstag", t: "05:00 – 23:00" },
-    { d: "Freitag", t: "05:00 – 23:00" },
-    { d: "Samstag", t: "05:00 – 23:00" },
-    { d: "Sonntag", t: "05:00 – 23:00" },
+    { d: "Montag", t: "05:00 - 23:00" },
+    { d: "Dienstag", t: "05:00 - 23:00" },
+    { d: "Mittwoch", t: "05:00 - 23:00" },
+    { d: "Donnerstag", t: "05:00 - 23:00" },
+    { d: "Freitag", t: "05:00 - 23:00" },
+    { d: "Samstag", t: "05:00 - 23:00" },
+    { d: "Sonntag", t: "05:00 - 23:00" },
   ];
 
   return (
@@ -78,7 +78,7 @@ export default function Hours() {
                 <h4 className="font-semibold text-white">Rund um die Uhr verfügbar</h4>
               </div>
               <p className="text-white/70 text-sm leading-relaxed">
-                18 Stunden täglich geöffnet – perfekt für Frühaufsteher und Nachtschwärmer
+                18 Stunden täglich geöffnet - perfekt für Frühaufsteher und Nachtschwärmer
               </p>
             </div>
           </div>

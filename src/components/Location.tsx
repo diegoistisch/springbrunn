@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Location() {
@@ -30,15 +31,20 @@ export default function Location() {
           </div>
           <a href="https://maps.google.com/maps?q=Hofgarten+1,+3484+Grafenwörth" target="_blank" className="btn btn-primary">Navigation starten</a>
         </div>
-        <div ref={mapRef} className="card min-h-80 h-96 w-full grid place-items-center text-white/50 slide-in-right">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[var(--accent)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-              </svg>
+        <div ref={mapRef} className="card overflow-hidden slide-in-right">
+          <div className="relative">
+            <Image
+              src="/images/maps.png"
+              alt="Karte zur Anfahrt Springbrunn Fitness"
+              width={800}
+              height={600}
+              className="w-full h-96 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="absolute bottom-6 left-6">
+              <h4 className="text-xl font-semibold text-white mb-2">Hofgarten 1</h4>
+              <p className="text-white/70 text-sm">3484 Grafenwörth</p>
             </div>
-            <p>Google Maps wird hier angezeigt</p>
-            <p className="text-sm text-white/30 mt-2">API Key erforderlich</p>
           </div>
         </div>
       </div>

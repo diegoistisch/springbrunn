@@ -20,7 +20,7 @@ export default function Footer() {
               <span className="text-white font-bold text-xl">Springbrunn Fitness</span>
             </div>
             <p className="text-white/70 leading-relaxed max-w-md">
-              Mehr als ein Gym – eine Community, die dich antreibt. Moderne Ausstattung,
+              Mehr als ein Gym - eine Community, die dich antreibt. Moderne Ausstattung,
               individuelle Trainingspläne und flexible Mitgliedschaften.
             </p>
           </div>
@@ -63,8 +63,8 @@ export default function Footer() {
                 </Link>
               </p>
               <p>
-                <Link href="mailto:kontakt@springbrunn-fitness.de" className="hover:text-[var(--primary)] transition-colors">
-                  kontakt@springbrunn-fitness.de
+                <Link href="mailto:kontakt@springbrunn-fitness.at" className="hover:text-[var(--primary)] transition-colors">
+                  kontakt@springbrunn-fitness.at
                 </Link>
               </p>
             </div>
