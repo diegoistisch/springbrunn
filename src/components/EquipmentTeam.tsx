@@ -7,7 +7,7 @@ export default function EquipmentTeam() {
   const teamRef = useScrollAnimation<HTMLDivElement>();
 
   return (
-    <section id="equipment-team" className="py-24 relative">
+    <section id="equipment-team" className="pt-8 pb-24 relative">
       <div className="absolute top-16 right-1/4 w-64 h-64 bg-gradient-to-br from-[var(--secondary)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">
