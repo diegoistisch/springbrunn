@@ -100,7 +100,7 @@ export default function Community() {
 
               {/* Final Statement */}
               <div className="mt-12 pt-8 border-t border-white/10">
-                <blockquote className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                <blockquote className="text-2xl md:text-3xl font-bold text-white leading-relaxed">
                   <span className="text-[var(--accent)]">Springbrunn Fitness ist kein anonymer Trainingsraum.</span><br />
                   Es ist ein Ort, an dem Fremde zu Trainingspartnern werden.
                 </blockquote>
