@@ -48,15 +48,7 @@ export default function Impressum() {
                   </p>
                   <p>
                     <span className="text-white/60">Firmenbuchnummer:</span>{" "}
-                    <span className="text-white">FN 381890d</span>
-                  </p>
-                  <p>
-                    <span className="text-white/60">Firmenbuchgericht:</span>{" "}
-                    <span className="text-white">Landesgericht Krems an der Donau</span>
-                  </p>
-                  <p>
-                    <span className="text-white/60">EUID:</span>{" "}
-                    <span className="text-white">ATBRA.381890-000</span>
+                    <span className="text-white">FN 380744 v</span>
                   </p>
                 </div>
               </section>
