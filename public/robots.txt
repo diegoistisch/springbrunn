@@ -1,0 +1,64 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Allgemeine Suchmaschinen - erlaubt
+User-agent: *
+Allow: /
+
+# LLM & AI Crawler Policy
+# Hinweis: Du kannst diese entweder erlauben (für bessere Sichtbarkeit in AI-Antworten)
+# oder blockieren (um deine Inhalte nicht für AI-Training zu nutzen)
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI SearchBot (für ChatGPT Search)
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI Training
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (wird für viele LLMs verwendet)
+User-agent: CCBot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Facebook/Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# ByteDance (TikTok)
+User-agent: Bytespider
+Allow: /
+
+# Diffbot (AI web data)
+User-agent: Diffbot
+Allow: /
+
+# Wenn du ALLE AI-Crawler BLOCKIEREN willst, ersetze alle "Allow: /" mit "Disallow: /"
+# Beispiel:
+# User-agent: GPTBot
+# Disallow: /
+
+# Sitemap
+Sitemap: https://springbrunn.netlify.app/sitemap.xml
