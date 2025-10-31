@@ -4,7 +4,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export default function Hours() {
   const titleRef = useScrollAnimation<HTMLDivElement>();
   const contentRef = useScrollAnimation<HTMLDivElement>();
-  const openingHours = { d: "Täglich", t: "05:00 - 23:00" };
 
   return (
     <section id="hours" className="py-32 relative">

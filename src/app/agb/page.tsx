@@ -34,8 +34,8 @@ export default function AGB() {
                 <h2 className="text-2xl font-semibold text-white mb-4">1. Geltungsbereich</h2>
                 <p className="leading-relaxed mb-4">
                   Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der SGH Fitness GmbH,
-                  Hofgarten 1, 3484 Grafenwörth (nachfolgend "Fitnessstudio" oder "wir") und den Mitgliedern
-                  (nachfolgend "Mitglied" oder "Sie") über die Nutzung der Fitnesseinrichtungen und -angebote.
+                  Hofgarten 1, 3484 Grafenwörth (nachfolgend &quot;Fitnessstudio&quot; oder &quot;wir&quot;) und den Mitgliedern
+                  (nachfolgend &quot;Mitglied&quot; oder &quot;Sie&quot;) über die Nutzung der Fitnesseinrichtungen und -angebote.
                 </p>
                 <p className="leading-relaxed">
                   Mit Ihrer Anmeldung erkennen Sie diese AGB als verbindlich an. Abweichende Bedingungen des Mitglieds
