@@ -77,16 +77,16 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className="flex items-baseline justify-between mb-6 relative z-10">
-                <div>
+              <div className="mb-6 relative z-10">
+                <div className="mb-4">
                   <p className="text-xs uppercase tracking-widest text-white/60 mb-2">Tarif</p>
                   <h4 className="text-xl font-bold">{p.name}</h4>
                 </div>
-                <div className="text-right">
-                  <div className={`text-4xl font-bold ${p.highlight ? "text-[var(--primary)]" : "text-white"}`}>
+                <div>
+                  <div className={`text-4xl font-bold whitespace-nowrap ${p.highlight ? "text-[var(--primary)]" : "text-white"}`}>
                     {p.price % 1 === 0 ? p.price : p.price.toFixed(2).replace('.', ',')} €
                   </div>
-                  <div className="text-sm text-white/60">
+                  <div className="text-sm text-white/60 mt-1">
                     {p.name === "Tageskarte" ? "/ Tag" : "/ Monat"}
                   </div>
                 </div>

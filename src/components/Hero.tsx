@@ -34,7 +34,14 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-8">
-              <a href="#enroll" className="btn btn-primary group">
+              <a
+                href="#probetraining"
+                className="btn btn-primary group"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('probetraining')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 <span>Jetzt starten</span>
                 <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

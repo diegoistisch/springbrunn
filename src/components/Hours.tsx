@@ -4,15 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export default function Hours() {
   const titleRef = useScrollAnimation<HTMLDivElement>();
   const contentRef = useScrollAnimation<HTMLDivElement>();
-  const rows = [
-    { d: "Montag", t: "05:00 - 23:00" },
-    { d: "Dienstag", t: "05:00 - 23:00" },
-    { d: "Mittwoch", t: "05:00 - 23:00" },
-    { d: "Donnerstag", t: "05:00 - 23:00" },
-    { d: "Freitag", t: "05:00 - 23:00" },
-    { d: "Samstag", t: "05:00 - 23:00" },
-    { d: "Sonntag", t: "05:00 - 23:00" },
-  ];
+  const openingHours = { d: "Täglich", t: "05:00 - 23:00" };
 
   return (
     <section id="hours" className="py-32 relative">
@@ -20,65 +12,52 @@ export default function Hours() {
 
       <div className="container relative">
         <div className="max-w-3xl mx-auto">
-          <div ref={titleRef} className="text-center mb-12 fade-in-up">
+          <div ref={titleRef} className="text-center mb-16 fade-in-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--accent)]/10 border border-[var(--accent)]/20 mb-6">
               <div className="w-2 h-2 bg-[var(--accent)] rounded-full animate-pulse" />
               <span className="text-sm font-medium text-[var(--accent)]">Immer für dich da</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
               Öffnungszeiten
             </h2>
-            <p className="text-xl text-white/70">
-              Täglich von 05:00 bis 23:00 Uhr für dich geöffnet
+            <p className="text-white/50 text-sm">
+              Täglich für dich da
             </p>
           </div>
 
-          <div ref={contentRef} className="card p-8 fade-in-up">
-            <div className="grid gap-6">
-              {rows.map((r, index) => {
-                const isToday = new Date().getDay() === (index + 1) % 7;
-                return (
-                  <div
-                    key={r.d}
-                    className={`flex items-center justify-between p-4 rounded-xl transition-all ${
-                      isToday
-                        ? "bg-[var(--primary)]/10 border border-[var(--primary)]/30"
-                        : "hover:bg-white/5"
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      {isToday && (
-                        <div className="w-3 h-3 bg-[var(--primary)] rounded-full animate-pulse" />
-                      )}
-                      <span className={`font-medium ${isToday ? "text-[var(--primary)]" : "text-white"}`}>
-                        {r.d}
-                      </span>
-                      {isToday && (
-                        <span className="text-xs bg-[var(--primary)]/20 text-[var(--primary)] px-2 py-1 rounded-full font-medium">
-                          HEUTE
-                        </span>
-                      )}
-                    </div>
-                    <span className={`font-mono font-semibold ${isToday ? "text-[var(--primary)]" : "text-white/80"}`}>
-                      {r.t}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="mt-8 p-6 bg-gradient-to-r from-[var(--primary)]/10 to-[var(--primary)]/5 rounded-2xl border border-white/10">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-6 h-6 bg-[var(--primary)]/20 rounded-full flex items-center justify-center">
-                  <svg className="w-3 h-3 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+          <div ref={contentRef} className="fade-in-up">
+            {/* Hauptzeiten - Split Design */}
+            <div className="grid md:grid-cols-2 gap-16 mb-16">
+              {/* Öffnung */}
+              <div className="text-center group">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-10 h-10 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-white">Rund um die Uhr verfügbar</h4>
+                <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider mb-4">Öffnung</h3>
+                <div className="text-7xl md:text-8xl font-bold text-white mb-3 font-mono">05:00</div>
+                <p className="text-white/50">Perfekt für Frühaufsteher</p>
               </div>
-              <p className="text-white/70 text-sm leading-relaxed">
-                18 Stunden täglich geöffnet - perfekt für Frühaufsteher und Nachtschwärmer
+
+              {/* Schließung */}
+              <div className="text-center group">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                </div>
+                <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider mb-4">Schließung</h3>
+                <div className="text-7xl md:text-8xl font-bold text-white mb-3 font-mono">23:00</div>
+                <p className="text-white/50">Ideal für Nachtschwärmer</p>
+              </div>
+            </div>
+
+            {/* Info-Banner */}
+            <div className="text-center pt-12 mt-8 border-t border-white/5">
+              <p className="text-white/40 text-xs">
+                7 Tage die Woche · 365 Tage im Jahr · 18 Stunden täglich
               </p>
             </div>
           </div>

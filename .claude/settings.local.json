@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(open -a \"Google Chrome\" https://springbrunn.netlify.app/)",
+      "Bash(node --version)",
+      "Bash(brew install:*)",
+      "mcp__chrome-devtools__list_pages",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__performance_start_trace",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__evaluate_script",
+      "mcp__chrome-devtools__click",
+      "Read(//var/folders/85/xsx57q213fxg411pcfh0l_th0000gn/T/chrome-devtools-mcp-6bc92M/**)"
     ],
     "deny": [],
     "ask": []

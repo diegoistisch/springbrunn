@@ -55,7 +55,7 @@ export default function AboutSplit() {
             {/* Eröffner - Claim */}
             <div className="space-y-4">
               <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                Seit 2012 steht Springbrunn Fitness für Qualität, Beständigkeit und maximale Leistung.
+                Springbrunn Fitness – wo aus Zielen Ergebnisse werden.
               </h3>
             </div>
 
@@ -71,10 +71,14 @@ export default function AboutSplit() {
               </div>
 
               <div className="pl-11 space-y-3">
-                <p className="text-white font-medium">Fortschritt durch Klarheit und Beständigkeit.</p>
-                <p className="text-white/80">Wir jagen keinen Trends hinterher.</p>
                 <p className="text-white/80 leading-relaxed">
-                  Bei uns gibt es keine leeren Werbefloskeln, keine schnellen Versprechen. Stattdessen gibt es eine klare Botschaft: <span className="text-white font-medium">Wenn du bereit bist, an dir zu arbeiten, geben wir dir alles, was du dafür brauchst.</span>
+                  Seit 2012 steht Springbrunn Fitness für Qualität, Beständigkeit und echte Ergebnisse.
+                </p>
+                <p className="text-white/80 leading-relaxed">
+                  Wir glauben an Fortschritt durch Disziplin, Geduld und konsequentes Training – nicht an schnelle Versprechen oder kurzlebige Trends.
+                </p>
+                <p className="text-white/80 leading-relaxed">
+                  <span className="text-white font-medium">Wenn du bereit bist, an dir zu arbeiten, bekommst du bei uns alles, was du dafür brauchst.</span>
                 </p>
               </div>
 

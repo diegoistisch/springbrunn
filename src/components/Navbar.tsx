@@ -55,13 +55,13 @@ export default function Navbar() {
 
       <div className="pointer-events-auto absolute right-6 top-6 hidden md:flex items-center gap-3">
         <nav className="border-2 border-white/30 text-white backdrop-blur-sm bg-white/5 rounded-full px-8 py-4 flex items-center gap-3 text-sm font-medium">
-          <Link href="#programs" onClick={(e) => handleSmoothScroll(e, '#programs')} className="text-white hover:text-white transition-colors px-2 py-1">Programme</Link>
+          <Link href="#about" onClick={(e) => handleSmoothScroll(e, '#about')} className="text-white hover:text-white transition-colors px-2 py-1">Über uns</Link>
           <Link href="#plans" onClick={(e) => handleSmoothScroll(e, '#plans')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Tarife</Link>
           <Link href="#hours" onClick={(e) => handleSmoothScroll(e, '#hours')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Öffnungszeiten</Link>
           <Link href="#location" onClick={(e) => handleSmoothScroll(e, '#location')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Anfahrt</Link>
           <Link href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Kontakt</Link>
         </nav>
-        <Link href="#enroll" className="btn btn-primary text-sm whitespace-nowrap">Jetzt starten</Link>
+        <Link href="#probetraining" onClick={(e) => handleSmoothScroll(e, '#probetraining')} className="btn btn-primary text-sm whitespace-nowrap">Jetzt starten</Link>
       </div>
 
 
@@ -151,11 +151,11 @@ export default function Navbar() {
             <div className="p-8 pt-24">
               <nav className="flex flex-col space-y-8">
                 <Link
-                  href="#programs"
+                  href="#about"
                   className="text-white hover:text-orange-500 transition-colors text-xl font-medium"
-                  onClick={(e) => { handleSmoothScroll(e, '#programs'); setIsMenuOpen(false); }}
+                  onClick={(e) => { handleSmoothScroll(e, '#about'); setIsMenuOpen(false); }}
                 >
-                  Programme
+                  Über uns
                 </Link>
                 <Link
                   href="#plans"

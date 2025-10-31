@@ -30,11 +30,11 @@ export default function Community() {
 
               <div className="space-y-8">
                 <p className="text-xl text-white/80 leading-relaxed">
-                  Unsere Community ist einzigartig, weil sie so vielfältig ist: <span className="text-white font-medium">die 90-jährige Pensionistin, die mit gezieltem Training ihre Mobilität erhält, der 14-jährige Schüler, der voller Energie seine ersten Schritte im Krafttraining macht.</span>
+                  Von der 90-jährigen Pensionistin bis zum Profisportler.
                 </p>
 
                 <p className="text-xl text-white/80 leading-relaxed">
-                  <span className="text-white font-medium">Der Profisportler, der an seiner Bestleistung feilt, und der Fitness-Neuling, der den Mut fasst, den ersten Schritt zu gehen.</span>
+                  Alle verbindet ein gemeinsames Ziel: <span className="text-white font-medium">Besser werden.</span>
                 </p>
 
                 {/* Key Quote */}
@@ -91,10 +91,13 @@ export default function Community() {
 
               <div className="space-y-6">
                 <p className="text-xl text-white/80 leading-relaxed">
-                  Bei uns zählen <span className="text-white font-medium">Respekt, Unterstützung und gegenseitige Motivation.</span> Hier trainierst du nicht allein - du gehörst dazu.
+                  Unser Gym ist ein Ort, an dem Fremde zu Trainingspartnern und zu Freunden werden.
                 </p>
                 <p className="text-xl text-white/80 leading-relaxed">
-                  Du wirst Teil einer Atmosphäre, in der jede Wiederholung zählt - nicht nur für dich, sondern für uns alle.
+                  Es zählen <span className="text-white font-medium">Respekt, Unterstützung und gegenseitige Motivation.</span>
+                </p>
+                <p className="text-xl text-white/80 leading-relaxed">
+                  Hier trainierst du nicht allein - du gehörst dazu.
                 </p>
               </div>
 
