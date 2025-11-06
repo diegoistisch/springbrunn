@@ -8,7 +8,7 @@ export default function Community() {
   const valuesRef = useScrollAnimation<HTMLDivElement>();
 
   return (
-    <section id="community" className="py-24 relative">
+    <section id="community" className="py-24 relative bg-[hsl(220,15%,12%)]">
       <div className="absolute top-16 right-1/4 w-64 h-64 bg-gradient-to-br from-[var(--secondary)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">

@@ -8,7 +8,7 @@ export default function AboutSplit() {
   const imagesRef = useScrollAnimation<HTMLDivElement>();
   const thirdImageRef = useScrollAnimation<HTMLDivElement>();
   return (
-    <section id="about" className="pt-24 pb-8 relative">
+    <section id="about" className="pt-24 pb-8 relative bg-[hsl(220,15%,12%)]">
       <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-gradient-to-br from-[var(--accent)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container relative">

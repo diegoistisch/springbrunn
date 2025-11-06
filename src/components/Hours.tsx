@@ -55,7 +55,7 @@ export default function Hours() {
 
             {/* Info-Banner */}
             <div className="text-center pt-12 mt-8 border-t border-white/5">
-              <p className="text-white/40 text-xs">
+              <p className="text-[var(--accent)] font-semibold text-lg md:text-xl">
                 7 Tage die Woche · 365 Tage im Jahr · 18 Stunden täglich
               </p>
             </div>

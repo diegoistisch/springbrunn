@@ -15,9 +15,15 @@
       "mcp__chrome-devtools__resize_page",
       "mcp__chrome-devtools__evaluate_script",
       "mcp__chrome-devtools__click",
-      "Read(//var/folders/85/xsx57q213fxg411pcfh0l_th0000gn/T/chrome-devtools-mcp-6bc92M/**)"
+      "Read(//var/folders/85/xsx57q213fxg411pcfh0l_th0000gn/T/chrome-devtools-mcp-6bc92M/**)",
+      "Bash(tree:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
+  },
+  "sandbox": {
+    "autoAllowBashIfSandboxed": true,
+    "enabled": true
   }
 }

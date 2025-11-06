@@ -55,16 +55,21 @@ export default function Pricing() {
               key={p.name}
               className={`card p-8 relative text-white flex flex-col transition-all duration-500 hover:scale-105 hover:-translate-y-2 group ${
                 p.highlight
-                  ? "border-[var(--primary)]/50 scale-105 shadow-2xl shadow-[var(--primary)]/20"
+                  ? "scale-105"
                   : ""
               }`}
               style={{
                 animationDelay: `${index * 150}ms`,
-                transitionDelay: `${index * 100}ms`
+                transitionDelay: `${index * 100}ms`,
+                background: 'hsl(220, 15%, 12%)',
+                ...(p.highlight ? {
+                  boxShadow: '0 0 60px rgba(110, 207, 218, 0.4)',
+                  border: '2px solid #6ecfda'
+                } : {})
               }}
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-[2px]">
-                <div className="w-full h-full rounded-3xl bg-[var(--card)]" />
+                <div className="w-full h-full rounded-3xl bg-[hsl(220,15%,12%)]" />
               </div>
               {p.highlight && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-600)] rounded-full text-xs font-semibold text-white">
@@ -102,7 +107,9 @@ export default function Pricing() {
                         p.highlight ? "bg-[var(--primary)]" : "bg-white"
                       }`} />
                     </div>
-                    {f}
+                    <span className={f === "Beste Preis-Leistung" ? "font-semibold text-[var(--primary)]" : ""}>
+                      {f}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -121,7 +128,7 @@ export default function Pricing() {
 
           {/* Ermäßigter Tarif Hinweis */}
           <div className="max-w-3xl mx-auto">
-            <div className="card p-6 bg-gradient-to-r from-[var(--accent)]/10 to-[var(--secondary)]/10 border border-[var(--accent)]/20">
+            <div className="card p-6" style={{ background: 'hsl(220, 15%, 12%)', border: '2px solid #6ecfda' }}>
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-10 h-10 bg-[var(--accent)]/20 rounded-full flex items-center justify-center">
                   <svg className="w-5 h-5 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
@@ -130,7 +137,9 @@ export default function Pricing() {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold text-white mb-1">Ermäßigter Tarif</h4>
-                  <p className="text-[var(--accent)] font-semibold">Nur 44,90 € / Monat (Jahresvertrag) | 65 € (Monatskarte)</p>
+                  <p className="text-white/70">
+                    Nur <span className="text-[var(--accent)] font-semibold">44,90 € / Monat</span> (Jahresvertrag) | <span className="text-[var(--accent)] font-semibold">65 €</span> (Monatskarte)
+                  </p>
                 </div>
               </div>
               <p className="text-white/70 text-sm pl-14">

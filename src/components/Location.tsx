@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Location() {
@@ -7,7 +6,7 @@ export default function Location() {
   const mapRef = useScrollAnimation<HTMLDivElement>();
 
   return (
-    <section id="location" className="py-32 relative">
+    <section id="location" className="py-32 relative bg-[hsl(220,15%,12%)]">
       <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-gradient-to-br from-[var(--accent)]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container grid md:grid-cols-2 gap-12 items-center">
@@ -32,20 +31,13 @@ export default function Location() {
           <a href="https://maps.google.com/maps?q=Hofgarten+1,+3484+Grafenwörth" target="_blank" className="btn btn-primary">Navigation starten</a>
         </div>
         <div ref={mapRef} className="card overflow-hidden slide-in-right">
-          <div className="relative">
-            <Image
-              src="/images/maps.png"
-              alt="Karte zur Anfahrt Springbrunn Fitness"
-              width={800}
-              height={600}
-              className="w-full h-96 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-            <div className="absolute bottom-6 left-6">
-              <h4 className="text-xl font-semibold text-white mb-2">Hofgarten 1</h4>
-              <p className="text-white/70 text-sm">3484 Grafenwörth</p>
-            </div>
-          </div>
+          <iframe
+            className="w-full h-96"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.9952236199147!2d15.778624415653537!3d48.21075517922998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d9df91d7f7e9d%3A0x3b1e3d1e3b1e3d1e!2sHofgarten%201%2C%203484%20Grafenw%C3%B6rth%2C%20Austria!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+            allowFullScreen
+            loading="lazy"
+            title="Karte zur Anfahrt Springbrunn Fitness"
+          />
         </div>
       </div>
     </section>
