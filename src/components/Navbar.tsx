@@ -60,6 +60,7 @@ export default function Navbar() {
           <Link href="#hours" onClick={(e) => handleSmoothScroll(e, '#hours')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Öffnungszeiten</Link>
           <Link href="#location" onClick={(e) => handleSmoothScroll(e, '#location')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Anfahrt</Link>
           <Link href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Kontakt</Link>
+          <Link href="/login" className="text-white/80 hover:text-white transition-colors px-2 py-1">Login</Link>
         </nav>
         <Link href="#probetraining" onClick={(e) => handleSmoothScroll(e, '#probetraining')} className="btn btn-primary text-sm whitespace-nowrap">Jetzt starten</Link>
       </div>
@@ -184,6 +185,13 @@ export default function Navbar() {
                   onClick={(e) => { handleSmoothScroll(e, '#contact'); setIsMenuOpen(false); }}
                 >
                   Kontakt
+                </Link>
+                <Link
+                  href="/login"
+                  className="text-white hover:text-orange-500 transition-colors text-xl font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Login
                 </Link>
               </nav>
             </div>
