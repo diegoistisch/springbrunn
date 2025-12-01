@@ -320,9 +320,59 @@ export default function Datenschutz() {
                 </p>
               </section>
 
+              {/* Google Maps */}
+              <section>
+                <h2 className="text-2xl font-semibold text-white mb-4">10. Google Maps</h2>
+                <p className="leading-relaxed mb-4">
+                  Diese Website nutzt den Kartendienst Google Maps zur Darstellung unseres Standorts. Anbieter ist die
+                  Google Ireland Limited (&quot;Google&quot;), Gordon House, Barrow Street, Dublin 4, Irland.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  <strong className="text-white">Einwilligung (Opt-In):</strong> Die Einbindung von Google Maps erfolgt
+                  erst nach Ihrer ausdrücklichen Einwilligung. Bevor Sie der Nutzung zustimmen, wird Ihnen ein Platzhalter
+                  angezeigt. Die Karte wird erst geladen, wenn Sie auf &quot;Karte laden&quot; klicken. Ihre Einwilligung wird
+                  im lokalen Speicher Ihres Browsers gespeichert, sodass Sie bei künftigen Besuchen nicht erneut gefragt werden.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  <strong className="text-white">Widerruf Ihrer Einwilligung:</strong> Sie können Ihre Einwilligung jederzeit
+                  widerrufen, indem Sie die Cookies und den lokalen Speicher Ihres Browsers löschen. Nach dem Widerruf
+                  wird Ihnen erneut der Platzhalter angezeigt und Google Maps wird nicht automatisch geladen.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  <strong className="text-white">Datenübertragung:</strong> Wenn Sie der Nutzung von Google Maps zustimmen,
+                  werden folgende Daten an Google übertragen:
+                </p>
+                <ul className="space-y-2 list-disc list-inside mb-4">
+                  <li>Ihre IP-Adresse</li>
+                  <li>Informationen über Ihren Browser und Ihr Gerät</li>
+                  <li>Die aufgerufene Seite unserer Website</li>
+                  <li>Ihr Standort (falls Sie die Standortfreigabe aktiviert haben)</li>
+                </ul>
+                <p className="leading-relaxed mb-4">
+                  Diese Daten können auch an Server von Google in den USA übertragen werden. Google ist unter dem
+                  EU-US Data Privacy Framework zertifiziert, welches ein angemessenes Datenschutzniveau gewährleistet.
+                </p>
+                <p className="leading-relaxed mb-4">
+                  Die Nutzung von Google Maps erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO
+                  und § 165 Abs. 3 TKG 2021.
+                </p>
+                <p className="leading-relaxed">
+                  Weitere Informationen finden Sie in der{" "}
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--primary)] hover:underline"
+                  >
+                    Datenschutzerklärung von Google
+                  </a>
+                  .
+                </p>
+              </section>
+
               {/* Österreichische Datenschutzbehörde */}
               <section>
-                <h2 className="text-2xl font-semibold text-white mb-4">10. Zuständige Aufsichtsbehörde</h2>
+                <h2 className="text-2xl font-semibold text-white mb-4">11. Zuständige Aufsichtsbehörde</h2>
                 <p className="leading-relaxed mb-4">
                   Die zuständige Aufsichtsbehörde in Datenschutzfragen ist:
                 </p>

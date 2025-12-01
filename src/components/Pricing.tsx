@@ -18,13 +18,13 @@ const plans: Plan[] = [
   {
     name: "Jahresvertrag",
     price: 54.90,
-    features: ["Alle Bereiche", "Gruppenkurse", "12 Monate Laufzeit", "Beste Preis-Leistung"],
+    features: ["Alle Bereiche", "12 Monate Laufzeit", "Beste Preis-Leistung"],
     highlight: true,
   },
   {
     name: "Monatskarte",
     price: 85,
-    features: ["Alle Bereiche", "Gruppenkurse", "1 Monat gültig"],
+    features: ["Alle Bereiche", "1 Monat gültig"],
     badge: "Keine Vertragsbindung",
   },
 ];

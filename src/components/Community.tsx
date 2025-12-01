@@ -51,7 +51,7 @@ export default function Community() {
             <div className="card overflow-hidden group hover:scale-105 transition-all duration-500 lg:ml-8">
               <div className="relative">
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/gymleco.jpeg"
                   alt="Unsere Community"
                   width={1200}
                   height={800}
@@ -72,7 +72,7 @@ export default function Community() {
             <div className="card overflow-hidden group hover:scale-105 transition-all duration-500 lg:order-1 lg:mr-8">
               <div className="relative">
                 <Image
-                  src="/images/machine1.jpg"
+                  src="/images/machine5.jpeg"
                   alt="Respekt und Unterstützung"
                   width={1200}
                   height={800}

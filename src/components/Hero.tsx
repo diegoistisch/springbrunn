@@ -57,6 +57,16 @@ export default function Hero() {
               >
                 Mehr erfahren
               </a>
+              <a
+                href="#firmenfitness"
+                className="btn btn-outline text-sm px-6 py-3"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('firmenfitness')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Firmenfitness
+              </a>
             </div>
           </div>
         </div>

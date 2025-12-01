@@ -85,9 +85,6 @@ export default function Footer() {
               <Link href="/datenschutz" className="text-white/60 hover:text-white transition-colors">
                 Datenschutz
               </Link>
-              <Link href="/agb" className="text-white/60 hover:text-white transition-colors">
-                AGB
-              </Link>
               <Link href="/widerruf" className="text-white/60 hover:text-white transition-colors">
                 Widerruf
               </Link>

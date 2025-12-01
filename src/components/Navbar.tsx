@@ -57,6 +57,7 @@ export default function Navbar() {
         <nav className="border-2 border-white/30 text-white backdrop-blur-sm bg-white/5 rounded-full px-8 py-4 flex items-center gap-3 text-sm font-medium">
           <Link href="#about" onClick={(e) => handleSmoothScroll(e, '#about')} className="text-white hover:text-white transition-colors px-2 py-1">Über uns</Link>
           <Link href="#plans" onClick={(e) => handleSmoothScroll(e, '#plans')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Tarife</Link>
+          <Link href="#firmenfitness" onClick={(e) => handleSmoothScroll(e, '#firmenfitness')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Firmenfitness</Link>
           <Link href="#hours" onClick={(e) => handleSmoothScroll(e, '#hours')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Öffnungszeiten</Link>
           <Link href="#location" onClick={(e) => handleSmoothScroll(e, '#location')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Anfahrt</Link>
           <Link href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-white/80 hover:text-white transition-colors px-2 py-1">Kontakt</Link>
@@ -163,6 +164,13 @@ export default function Navbar() {
                   onClick={(e) => { handleSmoothScroll(e, '#plans'); setIsMenuOpen(false); }}
                 >
                   Tarife
+                </Link>
+                <Link
+                  href="#firmenfitness"
+                  className="text-white hover:text-orange-500 transition-colors text-xl font-medium"
+                  onClick={(e) => { handleSmoothScroll(e, '#firmenfitness'); setIsMenuOpen(false); }}
+                >
+                  Firmenfitness
                 </Link>
                 <Link
                   href="#hours"

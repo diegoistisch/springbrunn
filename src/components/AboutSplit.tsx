@@ -19,9 +19,8 @@ export default function AboutSplit() {
             </div>
 
             <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-2">
-              Entspannt etwas
-              <span className="bg-gradient-to-r from-[var(--accent)] to-[var(--secondary)] bg-clip-text text-transparent"> verändern</span>
-              <br />- aber nachhaltig.
+              Dein Gym für
+              <span className="bg-gradient-to-r from-[var(--accent)] to-[var(--secondary)] bg-clip-text text-transparent"> echten Fortschritt.</span>
             </h2>
 
             {/* Stats moved to left side */}
@@ -100,8 +99,8 @@ export default function AboutSplit() {
           <div className="card overflow-hidden group hover:scale-105 transition-all duration-500">
             <div className="relative">
               <Image
-                src="/images/machine1.jpg"
-                alt="Gym equipment"
+                src="/images/machine2.jpeg"
+                alt="Moderne Ausstattung"
                 width={1200}
                 height={800}
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
@@ -117,8 +116,8 @@ export default function AboutSplit() {
           <div className="card overflow-hidden group hover:scale-105 transition-all duration-500">
             <div className="relative">
               <Image
-                src="/images/hero.jpg"
-                alt="Training"
+                src="/images/machine1.jpg"
+                alt="Community Spirit"
                 width={1200}
                 height={800}
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
@@ -136,8 +135,8 @@ export default function AboutSplit() {
           <div className="card overflow-hidden group hover:scale-105 transition-all duration-500">
             <div className="relative">
               <Image
-                src="/images/machine1.jpg"
-                alt="Personal training"
+                src="/images/gymWall.jpeg"
+                alt="Personal Training Bereich"
                 width={1200}
                 height={800}
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"

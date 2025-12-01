@@ -47,8 +47,8 @@ export default function EquipmentTeam() {
             <div className="card overflow-hidden group hover:scale-105 transition-all duration-500 lg:ml-8">
               <div className="relative">
                 <Image
-                  src="/images/machine1.jpg"
-                  alt="Hochwertige Fitnessgeräte"
+                  src="/images/hero.jpg"
+                  alt="High-End Fitnessgeräte"
                   width={1200}
                   height={800}
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
@@ -87,7 +87,7 @@ export default function EquipmentTeam() {
             <div className="card overflow-hidden group hover:scale-105 transition-all duration-500 order-2 lg:order-1 lg:mr-8">
               <div className="relative">
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/machine4.jpeg"
                   alt="Unser professionelles Team"
                   width={1200}
                   height={800}

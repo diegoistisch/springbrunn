@@ -3,6 +3,7 @@ import AboutSplit from "@/components/AboutSplit";
 import EquipmentTeam from "@/components/EquipmentTeam";
 import Community from "@/components/Community";
 import Pricing from "@/components/Pricing";
+import Firmenfitness from "@/components/Firmenfitness";
 import FreeTrial from "@/components/FreeTrial";
 import Hours from "@/components/Hours";
 import Location from "@/components/Location";
@@ -17,6 +18,7 @@ export default function Home() {
       <EquipmentTeam />
       <Community />
       <Pricing />
+      <Firmenfitness />
       <FreeTrial />
       <Hours />
       <Location />
